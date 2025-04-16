@@ -1,0 +1,21 @@
+[llm]
+model = "deepseek-chat"
+api_key = "your api key"
+#base_url = "https://api.deepseek.com"
+base_url = "https://api.deepseek.com/v1/chat/completions"
+max_tokens = 8192
+temperature = 0.8
+
+[chunking]
+chunk_size = 500  # 每个分块的字数
+overlap = 100      # 每个块之间的重叠字数
+
+[standardization]
+enabled = true             # 是否启用实体标准化
+use_llm_for_entities = true  # 是否使用LLM进行额外的实体发现
+
+[inference]
+enabled = true             # 是否启用关系推理
+use_llm_for_inference = true  # 是否使用LLM进行关系推理
+apply_transitive = true    # 是否应用传递推理规则
+

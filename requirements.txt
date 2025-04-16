@@ -1,0 +1,9 @@
+networkx==3.4.2
+numpy==2.2.4
+pandas==2.2.3
+Pillow==9.3.0
+fitz==0.0.1.dev2
+PyMuPDF==1.24.5
+pyvis==0.3.2
+
+
